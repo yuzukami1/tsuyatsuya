@@ -106,7 +106,7 @@ a{
 }
 
 .header_logo, .header_logo_img{
-	width: 50px;
+	width: 35px;
 	height: auto;
 }
 
@@ -202,19 +202,54 @@ textarea{
 	background: var(--main-font-color);
 }
 
-button{
+/* button{
 	font-size: 1rem;
 	letter-spacing: 3px;
 	padding: 10px 30px;
-	background: #248;/*#DA7400; */
+	background: #248; //#DA7400;
 	border-style: none;
 	color: var(--main-font-color);
+	cursor: pointer;
+} */
+button{
+	border: 1px solid var(--main-font-color);
+	border-radius: 0;
+	background: var(--main-bg-color);
+	color: var(--main-font-color);
+	padding: 8px 16px;
+	cursor: pointer;
+	transition: 0.3s;
 }
+button:hover{
+	background: var(--main-font-color);
+	color: var(--main-bg-color);
+}
+
 
 .card-shadow{
 	/* border-radius: 2px; */
 	border:1px solid var(--card-border-color);
 	box-shadow: 5px 8px 20px rgba(255,255,255,0.25);
+}
+
+.contact_flow {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.contact_sentense{
+	margin-top: 30px;
+	flex-direction: column;
+}
+
+.contact_note{
+	margin-bottom: 20px;
+}
+
+.contact_button{
+	margin-bottom: 20px;
 }
 
 @media (max-width: 750px) {
