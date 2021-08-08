@@ -6,6 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>艶々</title>
 	<link rel="stylesheet" href="./css/styles.css">
+	<link rel="stylesheet" href="./css/lightbox.css">
 	<link href="https://fonts.googleapis.com/earlyaccess/hannari.css" rel="stylesheet" />
 	<script src="js/jquery-3.5.1.min.js"></script>
 </head>
@@ -65,5 +66,14 @@
 		<p>&copy;2021&nbsp;tsuya_2</p>
     </footer>
 	<script type="text/javascript" src="./js/main.js"></script>
+	<script src="js/lightbox.js"></script>
+	<script>
+	    lightbox.option({
+			'fadeDuration': 100,
+			'alwaysShowNavOnTouchDevices': true,
+	    	'wrapAround': true,
+			'albumLabel': "%1 / %2"
+	    })
+	</script>
 </body>
 </html>
