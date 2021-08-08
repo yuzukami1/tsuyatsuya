@@ -240,6 +240,11 @@ button:hover{
 	transform: translateY(3px);
 }
 
+.contact_top{
+	display:flex;
+	justify-content:center;
+}
+
 .contact_flow {
 	display: flex;
 	flex-direction: column;
