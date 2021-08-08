@@ -230,8 +230,14 @@ button:hover{
 
 .card-shadow{
 	/* border-radius: 2px; */
-	border:1px solid var(--card-border-color);
+	/* border:1px solid var(--card-border-color); */
 	box-shadow: 5px 8px 20px rgba(255,255,255,0.25);
+	transition: .3s;
+}
+
+.card-shadow:hover{
+	box-shadow: 0 15px 30px -5px rgba(255,255,255,.15), 0 0 5px rgba(255,255,255,.1);
+	transform: translateY(3px);
 }
 
 .contact_flow {

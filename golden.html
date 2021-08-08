@@ -7,15 +7,18 @@
 	<title>艶々</title>
 	<link rel="stylesheet" href="./css/styles.css">
 	<link rel="stylesheet" href="./css/lightbox.css">
-	<link href="https://fonts.googleapis.com/earlyaccess/hannari.css" rel="stylesheet" /></head>
+	<link href="https://fonts.googleapis.com/earlyaccess/hannari.css" rel="stylesheet" />
 	<script src="js/jquery-3.5.1.min.js"></script>
+</head>
+
 <body>
+	<div class="menu_cover"></div>
 	<div id="header" >
 		<div class="header_logo">
 			<h1><a href="./index.html"><img class="header_logo_img" src="./image/logo_silver.png" alt="艶々 漆工芸作家組"></a></h1>
 		</div>
 		<div class="header_menu">
-			<ul>
+			<ul class="nav-links">
 				<li><a href="./index.html">トップ</a></li>
 				<li><a href="./profile.html">挨拶</a></li>
 				<li><a href="./piece.html">作品</a></li>
@@ -23,6 +26,11 @@
 				<li><a href="./repair.html">修復</a></li>
 				<li><a href="./contact.html">お問い合わせ</a></li>
 			</ul>
+			<div class="burger">
+				<div class="line1"></div>
+				<div class="line2"></div>
+				<div class="line3"></div>
+			</div>
 		</div>
 	</div>
 	<div id="pan_list">
@@ -31,29 +39,29 @@
 	<div class="main_container">
 		<div class="pic-content">
 			<div class="img-item">
-				<a href="image/golden_1_1.png" data-lightbox="golden_1-group"><img src="image/golden_1.png" alt="器"></a>
+				<a href="image/golden_1_1.png" data-lightbox="golden_1-group"><img src="image/golden_1.png" class="card-shadow" alt="器"></a>
 				<a href="image/golden_1_2.png" data-lightbox="golden_1-group"></a>
 			</div>
 			<div class="img-item">
-				<a href="image/golden_2_1.png" data-lightbox="golden_2-group"><img src="image/golden_2.png" alt="器"></a>
+				<a href="image/golden_2_1.png" data-lightbox="golden_2-group"><img src="image/golden_2.png" class="card-shadow" alt="器"></a>
 				<a href="image/golden_2_2.png" data-lightbox="golden_2-group"></a>
 			</div>
 			<div class="img-item">
-				<a href="image/golden_3_1.png" data-lightbox="golden_3-group"><img src="image/golden_3.png" alt="器"></a>
+				<a href="image/golden_3_1.png" data-lightbox="golden_3-group"><img src="image/golden_3.png" class="card-shadow" alt="器"></a>
 			</div>
 			<div class="img-item">
-				<a href="image/golden_4_1.png" data-lightbox="golden_4-group"><img src="image/golden_4.png" alt="器"></a>
+				<a href="image/golden_4_1.png" data-lightbox="golden_4-group"><img src="image/golden_4.png" class="card-shadow" alt="器"></a>
 				<a href="image/golden_4_2.png" data-lightbox="golden_4-group"></a>
 			</div>
 			<div class="img-item">
-				<a href="image/golden_5_1.png" data-lightbox="golden_5-group"><img src="image/golden_5.png" alt="器"></a>
+				<a href="image/golden_5_1.png" data-lightbox="golden_5-group"><img src="image/golden_5.png" class="card-shadow" alt="器"></a>
 				<a href="image/golden_5_2.png" data-lightbox="golden_5-group"></a>
 			</div>
 			<div class="img-item">
-				<a href="image/golden_6_1.png" data-lightbox="golden_6-group"><img src="image/golden_6.png" alt="器"></a>
+				<a href="image/golden_6_1.png" data-lightbox="golden_6-group"><img src="image/golden_6.png" class="card-shadow" alt="器"></a>
 			</div>
 			<div class="img-item">
-				<a href="image/golden_7_1.png" data-lightbox="golden_7-group"><img src="image/golden_7.png" alt="器"></a>
+				<a href="image/golden_7_1.png" data-lightbox="golden_7-group"><img src="image/golden_7.png" class="card-shadow" alt="器"></a>
 				<a href="image/golden_7_2.png" data-lightbox="golden_7-group"></a>
 			</div>
 		</div>
@@ -61,7 +69,15 @@
 	<footer>
 		<p>&copy;2021&nbsp;tsuya_2</p>
     </footer>
-	<script src="js/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript" src="./js/main.js"></script>
 	<script src="js/lightbox.js"></script>
+	<script>
+	    lightbox.option({
+			'fadeDuration': 100,
+			'alwaysShowNavOnTouchDevices': true,
+	    	'wrapAround': true,
+			'albumLabel': "%1 / %2"
+	    })
+	</script>
 </body>
 </html>
