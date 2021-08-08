@@ -79,7 +79,7 @@ a{
 	padding: 50px 30px;
 }
 .top_nav a:hover{
-	text-shadow: 0 0 30px var(--main-font-color);
+	text-shadow: 0 0 10px white;
 	/* color:#FFDC8C; 	/*リンクにマウスが乗ったら背景色を変更する*/ */
 }
 
