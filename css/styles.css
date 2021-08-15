@@ -110,7 +110,7 @@ a{
 }
 
 .header_logo, .header_logo_img{
-	width: 35px;
+	width: 70px;
 	height: auto;
 }
 
@@ -313,13 +313,17 @@ button:hover{
 		align-items: center;
 	}
 
+	.text_center{
+		padding-bottom: 15px;
+	}
+
 	.top_left {
 		align-items: center;
 		width: 100%;
 	}
 	.top_nav{
 		width: 300px;
-		padding-top: 30px;
+		padding-top: 40px;
 		padding-bottom:70px;
 	}
 
